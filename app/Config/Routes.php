@@ -6,7 +6,7 @@ use Config\Services;
 
 $routes = Services::routes();
 
-$routes->get('/', 'LandingPage::index');
+$routes->get('/', 'UserController::topup');
 
 $routes->get('/login', 'LoginController::login');
 $routes->post('/login', 'LoginController::login_process');
